@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HeroSection from "./components/HeroSection/HeroSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/offer" />
         <Route path="/contact" />
       </Routes>
+      <HeroSection />
     </Router>
   );
 }
