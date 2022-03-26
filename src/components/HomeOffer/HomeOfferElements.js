@@ -75,8 +75,7 @@ export const HomeOfferBox = styled.div`
 
   @media (max-width: 1060px) {
     margin: 24px 0px 24px 0px;
-    width: 400px;
-    height: 656px;
+    width: 350px;
   }
 
   @media (max-width: 680px) {
@@ -90,6 +89,7 @@ export const HomeOfferIcon = styled.img`
   padding-top: 34px;
   padding-bottom: 8px;
 `;
+
 export const HomeOfferTitle = styled.h2`
   color: ${palette.gray100};
   text-align: center;
@@ -101,6 +101,7 @@ export const HomeOfferList = styled.ul`
   flex-direction: column;
   color: ${palette.gray100};
   width: 225px;
+  height: 275px;
 `;
 
 export const HomeOfferText = styled.li`
@@ -119,4 +120,14 @@ export const HomeOfferText = styled.li`
     padding-right: 12px;
     vertical-align: middle;
   }
+`;
+
+export const BtnAskOffer = styled.button`
+  width: 210px;
+  height: 56px;
+  border-radius: 13px;
+  font-size: ${typhography.paragraphLarge};
+  font-weight: bold;
+  position: relative;
+  bottom: -30px;
 `;

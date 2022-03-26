@@ -18,6 +18,7 @@ import {
   HomeOfferTextWrapper,
   HomeOfferCards,
   HomeOfferIcon,
+  BtnAskOffer,
 } from "./HomeOfferElements";
 
 import seoIcon from "../../assets/seoIcon.svg";
@@ -49,16 +50,19 @@ const HomeOffer = () => {
             <HomeOfferIcon src={seoIcon} />
             <HomeOfferTitle>SEO Optymalization</HomeOfferTitle>
             <HomeOfferList>{seoOffer}</HomeOfferList>
+            <BtnAskOffer>Ask for an offer</BtnAskOffer>
           </HomeOfferBox>
           <HomeOfferBox>
             <HomeOfferIcon src={adsIcon} />
             <HomeOfferTitle>Google ads</HomeOfferTitle>
             <HomeOfferList>{adsOffer}</HomeOfferList>
+            <BtnAskOffer>Ask for an offer</BtnAskOffer>
           </HomeOfferBox>
           <HomeOfferBox>
             <HomeOfferIcon src={brandingIcon} />
             <HomeOfferTitle>Branding</HomeOfferTitle>
             <HomeOfferList>{brandingOffer}</HomeOfferList>
+            <BtnAskOffer>Ask for an offer</BtnAskOffer>
           </HomeOfferBox>
         </HomeOfferCards>
       </HomeOfferWrapper>
