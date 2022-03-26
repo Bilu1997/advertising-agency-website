@@ -4,7 +4,7 @@ import { typhography } from "../../styles/Typhography";
 import { Link as LinkS } from "react-scroll";
 
 export const HeroContainer = styled.section`
-  max-height: 919px;
+  height: 919px;
   background-position: center;
   background-size: cover;
   object-fit: cover;
@@ -34,7 +34,6 @@ export const HeroWrapper = styled.div`
   padding-left: 204px;
   padding-top: 216px;
   width: 451px;
-  z-index: 3;
 
   @media (max-width: 900px) {
     padding-left: 0px;
