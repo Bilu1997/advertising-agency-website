@@ -6,20 +6,23 @@ import icon from "../../assets/checkIcon.svg";
 export const HomeOfferContainer = styled.section`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  background-color: ${palette.gray100};
+  align-items: center;
   justify-content: center;
-  z-index: -1;
 `;
 
 export const HomeOfferTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   width: 680px;
   color: ${palette.gray900};
+
+  @media (max-width: 1060px) {
+  }
+
+  @media (max-width: 680px) {
+    width: 300px;
+  }
 `;
 
 export const HomeOfferHeading = styled.h1`
@@ -35,12 +38,24 @@ export const HomeOfferWrapper = styled.div`
   align-items: center;
   margin: 0 auto;
   padding-top: 50px;
+
+  @media (max-width: 1060px) {
+    padding-top: 16px;
+  }
+
+  @media (max-width: 680px) {
+    padding-top: 8px;
+  }
 `;
 
 export const HomeOfferCards = styled.div`
   display: flex;
   flex-direction: row;
   padding-bottom: 120px;
+
+  @media (max-width: 1060px) {
+    flex-direction: column;
+  }
 `;
 
 export const HomeOfferParagraph = styled.p`
@@ -57,6 +72,16 @@ export const HomeOfferBox = styled.div`
   height: 656px;
   background-color: ${palette.gray900};
   border-radius: 11px;
+
+  @media (max-width: 1060px) {
+    margin: 24px 0px 24px 0px;
+    width: 400px;
+    height: 656px;
+  }
+
+  @media (max-width: 680px) {
+    width: 300px;
+  }
 `;
 
 export const HomeOfferIcon = styled.img`
