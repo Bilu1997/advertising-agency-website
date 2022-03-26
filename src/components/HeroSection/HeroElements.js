@@ -18,27 +18,61 @@ export const HeroImg = styled.img`
   position: absolute;
   top: 0;
   z-index: -1;
+
+  @media (max-width: 900px) {
+    height: 780px;
+  }
+
+  @media (max-width: 480px) {
+    height: 680px;
+  }
 `;
+
 export const HeroWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 204px;
   padding-top: 216px;
-
   width: 451px;
   z-index: 3;
+
+  @media (max-width: 900px) {
+    padding-left: 0px;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    width: 320px;
+  }
 `;
+
 export const HeroTitle = styled.h1`
   font-size: ${typhography.heading2};
   color: ${palette.gray100};
   line-height: ${typhography.lineHeight};
+
+  @media (max-width: 480px) {
+    font-size: ${typhography.heading3};
+  }
 `;
+
 export const HeroParagraph = styled.p`
   font-weight: 300;
   font-size: ${typhography.paragraphLarge};
   line-height: ${typhography.lineHeight};
   color: ${palette.gray100};
   margin-top: -24px;
+
+  @media (max-width: 900px) {
+    margin-top: -16px;
+  }
+  @media (max-width: 480px) {
+    font-size: ${typhography.paragraphNormal};
+  }
 `;
 
 export const OfferBtn = styled.button`
@@ -50,4 +84,10 @@ export const OfferBtn = styled.button`
   border-style: none;
   background-color: ${palette.gray900};
   color: ${palette.gray100};
+
+  @media (max-width: 480px) {
+    width: 124px;
+    height: 48px;
+    font-size: ${typhography.paragraphNormal};
+  }
 `;
