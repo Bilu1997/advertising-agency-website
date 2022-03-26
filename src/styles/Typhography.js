@@ -7,5 +7,4 @@ export const typhography = {
   heading3: "1.728rem",
   heading2: "2.074rem",
   heading1: "2.488rem",
-  lineHeight: "140%",
 };

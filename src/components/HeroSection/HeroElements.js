@@ -4,18 +4,24 @@ import { typhography } from "../../styles/Typhography";
 import { Link as LinkS } from "react-scroll";
 
 export const HeroContainer = styled.section`
+  width: 100%;
   height: 919px;
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
   overflow: hidden;
+
+  @media (max-width: 900px) {
+    height: 780px;
+  }
+
+  @media (max-width: 480px) {
+    height: 680px;
+  }
 `;
 
 export const HeroImg = styled.img`
+  height: 919px;
   object-fit: cover;
   width: 100%;
   position: absolute;
-  top: 0;
   z-index: -1;
 
   @media (max-width: 900px) {
@@ -28,7 +34,6 @@ export const HeroImg = styled.img`
 `;
 
 export const HeroWrapper = styled.div`
-  display: flex;
   flex-direction: column;
   padding-left: 204px;
   padding-top: 216px;
