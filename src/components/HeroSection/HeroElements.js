@@ -14,7 +14,6 @@ export const HeroContainer = styled.section`
 export const HeroImg = styled.img`
   object-fit: cover;
   width: 100%;
-  height: 919px;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -34,6 +33,7 @@ export const HeroWrapper = styled.div`
   padding-left: 204px;
   padding-top: 216px;
   width: 451px;
+  z-index: 3;
 
   @media (max-width: 900px) {
     padding-left: 0px;
