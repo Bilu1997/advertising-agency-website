@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeroSection from "./components/HeroSection/HeroSection";
 import HomeOffer from "./components/HomeOffer/HomeOffer";
 import TrustedUs from "./components/TrustedUs/TrustedUs";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <HeroSection />
       <HomeOffer />
       <TrustedUs />
+      <Footer />
     </Router>
   );
 }

@@ -5,4 +5,5 @@ export const palette = {
   gray900: "#1F1F1F",
   black: "#000000",
   white: "fffff",
+  green: "#3FBC6A",
 };

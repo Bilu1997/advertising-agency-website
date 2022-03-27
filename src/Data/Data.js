@@ -14,8 +14,8 @@ export const Data = {
   trustedUsPragraph: "We are working with biggest companies in the world!",
 
   //Footer
-  footerHeadingFirst: "Start something new",
-  footerHeadingSecond: "Contact with us!",
+  firstfooterHeading: "Start something new",
+  secondFooterHeading: "Contact with us!",
   footerParagraph:
     "We take care of each partnership at the highest level. Join the group of satisfied customers.",
 };
