@@ -8,6 +8,7 @@ export const HomeOfferContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: ${palette.gray100};
 `;
 
 export const HomeOfferTextWrapper = styled.div`

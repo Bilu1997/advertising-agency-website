@@ -1,12 +1,26 @@
 export const Data = {
+  //HeroSection
   heroTitle: "Take your business on another level",
   heroParagraph:
     "Our advertising agency will make your company more visable in network. If you need any advertising or e-commerce support, you have come to the right place!",
+
+  //HomeOffer
   homeOfferTitle: "How we can help you?",
   homeOfferParagraph:
     "We have been operating in the field of e-business and advertising for years. Effective marketing is our specialty.",
+
+  //TrustedUs
+  trustedUsHeading: "They trusted us",
+  trustedUsPragraph: "We are working with biggest companies in the world!",
+
+  //Footer
+  footerHeadingFirst: "Start something new",
+  footerHeadingSecond: "Contact with us!",
+  footerParagraph:
+    "We take care of each partnership at the highest level. Join the group of satisfied customers.",
 };
 
+//HomeOffer
 export const seoOfferData = [
   { position: 1, text: "SEO Strategy" },
   { position: 2, text: "Content optimalization" },
