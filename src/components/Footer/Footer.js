@@ -20,10 +20,13 @@ const Footer = () => {
       <FooterParagraph>{Data.footerParagraph}</FooterParagraph>
       <FooterBgImage src={img} />
       <FooterForm id="footer_form">
-        <FooterInput placeholder="first and last name"></FooterInput>
-        <FooterInput placeholder="telephone number"></FooterInput>
-        <FooterInput placeholder="e-mail"></FooterInput>
-        <FooterInput placeholder="description"></FooterInput>
+        <FooterInput
+          type="text"
+          placeholder="first and last name"
+        ></FooterInput>
+        <FooterInput type="tel" placeholder="telephone number"></FooterInput>
+        <FooterInput type="email" placeholder="e-mail"></FooterInput>
+        <FooterInput type="text" placeholder="description"></FooterInput>
         <FooterInput type="checkbox"></FooterInput>
       </FooterForm>
       <FooterInputButton type="submit" form="footer_form">

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { typhography } from "../../styles/Typhography";
 import { palette } from "../../styles/Colorpallete";
+
 export const FooterContainer = styled.section`
   display: flex;
   flex-direction: column;
@@ -23,11 +24,22 @@ export const FooterHeading = styled.h1`
   padding-top: 24px;
   font-size: ${typhography.heading1};
   color: ${palette.gray100};
+  text-align: center;
 
   &:nth-child(2) {
     margin-top: -48px;
   }
+
+  @media (max-width: 600px) {
+    font-size: ${typhography.heading3};
+    width: 320px;
+
+    &:nth-child(2) {
+      margin-top: -36px;
+    }
+  }
 `;
+
 export const FooterParagraph = styled.p`
   margin-top: -2px;
   width: 450px;
@@ -36,6 +48,10 @@ export const FooterParagraph = styled.p`
   font-size: ${typhography.paragraphLarge};
   color: ${palette.gray100};
   padding-bottom: 48px;
+
+  @media (max-width: 600px) {
+    width: 340px;
+  }
 `;
 
 export const FooterForm = styled.form`
@@ -45,6 +61,11 @@ export const FooterForm = styled.form`
   color: ${palette.gray100};
   font-weight: 300;
   font-size: ${typhography.paragraphNormal};
+
+  @media (max-width: 600px) {
+    width: 315px;
+    margin-top: -30px;
+  }
 `;
 
 export const FooterInput = styled.input`
@@ -92,4 +113,8 @@ export const FooterCopyright = styled.small`
   width: 100%;
   text-align: center;
   padding-bottom: 16px;
+
+  @media (max-width: 600px) {
+    top: 200px;
+  }
 `;
