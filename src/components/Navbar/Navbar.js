@@ -24,8 +24,8 @@ const Navbar = () => {
           <RightContainter>
             <NavLinkContainer>
               <NavLink to="/">Home</NavLink>
-              <NavLink to="/">Offer</NavLink>
-              <NavLink to="/">Contact</NavLink>
+              <NavLink to="/offer">Offer</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
               <MobileIcon
                 onClick={() => {
                   setOpenMobileMenu((curr) => !curr);
