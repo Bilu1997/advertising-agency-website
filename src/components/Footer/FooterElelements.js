@@ -107,7 +107,7 @@ export const FooterCopyright = styled.small`
   font-size: ${typhography.paragraphNormal};
   color: ${palette.gray100};
   position: relative;
-  top: 220px;
+  top: 206px;
   bottom: 0px;
   left: 0px;
   width: 100%;

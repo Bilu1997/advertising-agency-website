@@ -1,4 +1,3 @@
-import "../App.css";
 import HeroSection from "../components/HeroSection/HeroSection";
 import HomeOffer from "../components/HomeOffer/HomeOffer";
 import TrustedUs from "../components/TrustedUs/TrustedUs";
