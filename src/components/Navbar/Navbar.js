@@ -25,15 +25,9 @@ const Navbar = () => {
             </LeftContainer>
             <RightContainter>
               <NavLinkContainer>
-                <NavLink to="/" activeClassName={{ color: "red" }}>
-                  Home
-                </NavLink>
-                <NavLink to="/offer" activeClassName="active">
-                  Offer
-                </NavLink>
-                <NavLink to="/contact" activeClassName="active">
-                  Contact
-                </NavLink>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/offer">Offer</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
                 <MobileIcon
                   onClick={() => {
                     setOpenMobileMenu((curr) => !curr);

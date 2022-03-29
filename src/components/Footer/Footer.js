@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import img from "../../assets/footer.jpg";
 import { Data } from "../../Data/Data";
 import FooterFormFunctions from "./FooterFormFunctions";
 import validate from "./FooterFormValidation";
+import footerBgImg from "../../assets/footer.jpg";
 
 import {
   FooterBgImage,
@@ -31,7 +31,7 @@ const Footer = () => {
       <FooterHeading>{Data.firstfooterHeading.toUpperCase()}</FooterHeading>
       <FooterHeading>{Data.secondFooterHeading.toUpperCase()}</FooterHeading>
       <FooterParagraph>{Data.footerParagraph}</FooterParagraph>
-      <FooterBgImage src={img} />
+      <FooterBgImage src={footerBgImg} />
       {isSubmitted ? (
         <FooterThanks>Thank you. We will respond you in 24h.</FooterThanks>
       ) : (
