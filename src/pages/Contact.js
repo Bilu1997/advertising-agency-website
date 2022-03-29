@@ -1,10 +1,12 @@
 import React from "react";
-import ContactPage from "../components/ContactPage/ContactPage";
+import ContactPageBanner from "../components/ContactPageBanner/ContactPageBanner";
+import ContactPageSections from "../components/ContactPageSections/ContactPageSections";
 
 const Contact = () => {
   return (
     <>
-      <ContactPage />
+      <ContactPageBanner />
+      <ContactPageSections />
     </>
   );
 };
