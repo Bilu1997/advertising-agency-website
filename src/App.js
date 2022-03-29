@@ -10,7 +10,7 @@ import ScrollToTop from "./ScrollToTop";
 function App() {
   return (
     <>
-      <Router basename="/advertising-agency-website">
+      <Router>
         <Navbar />
         <ScrollToTop>
           <Routes>
