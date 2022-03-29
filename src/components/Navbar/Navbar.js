@@ -21,15 +21,13 @@ const Navbar = () => {
         <Nav openMobileMenu={openMobileMenu}>
           <NavbarInnerContainer>
             <LeftContainer>
-              <NavLogo to="/advertising-agency-website/">CAA</NavLogo>
+              <NavLogo to="/">CAA</NavLogo>
             </LeftContainer>
             <RightContainter>
               <NavLinkContainer>
-                <NavLink to="/advertising-agency-website/">Home</NavLink>
-                <NavLink to="/advertising-agency-website/offer">Offer</NavLink>
-                <NavLink to="/advertising-agency-website/contact">
-                  Contact
-                </NavLink>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/offer">Offer</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
                 <MobileIcon
                   onClick={() => {
                     setOpenMobileMenu((curr) => !curr);
