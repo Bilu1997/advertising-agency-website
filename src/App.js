@@ -10,13 +10,19 @@ import ScrollToTop from "./ScrollToTop";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/advertising-agency-website">
         <Navbar />
         <ScrollToTop>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/offer" element={<Offer />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/advertising-agency-website/" element={<Home />} />
+            <Route
+              path="/advertising-agency-website/offer"
+              element={<Offer />}
+            />
+            <Route
+              path="/advertising-agency-website/contact"
+              element={<Contact />}
+            />
           </Routes>
         </ScrollToTop>
         <Footer />
