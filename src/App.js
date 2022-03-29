@@ -5,17 +5,20 @@ import Offer from "./pages/Offer";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/offer" element={<Offer />} />\
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Navbar />{" "}
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/offer" element={<Offer />} />\
+            <Route path="/contact" element={<Contact />} />
+          </Routes>{" "}
+        </ScrollToTop>
         <Footer />
       </Router>
     </>

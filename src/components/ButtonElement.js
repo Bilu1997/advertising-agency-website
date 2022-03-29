@@ -13,8 +13,9 @@ export const Button = styled(LinkS)`
   font-weight: bold;
   border-radius: 13px;
   border-style: none;
-  background-color: ${palette.gray900};
-  color: ${palette.gray100};
+  background-color: ${({ btnlight }) =>
+    btnlight ? palette.gray100 : palette.gray900};
+  color: ${({ btnLight }) => (btnLight ? palette.gray900 : palette.gray100)};
   cursor: pointer;
 
   @media (max-width: 480px) {

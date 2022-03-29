@@ -2,6 +2,7 @@ export const offerObjSeo = {
   lightBg: true,
   lightText: false,
   grayIcon: true,
+  btnLight: false,
   header: "Seo optymalization",
   paragraph:
     "Seo optymalization is very important in e-commerce. We taking care for better relevant content.",
@@ -32,6 +33,7 @@ export const offerObjSeo = {
 
 export const offerObjAds = {
   lightBg: false,
+  btnLight: true,
   lightText: true,
   grayIcon: false,
   header: "Google ads",
@@ -65,6 +67,7 @@ export const offerObjBrand = {
   lightBg: true,
   lightText: false,
   grayIcon: true,
+  btnLight: false,
   header: "Branding",
   paragraph:
     "Seo optymalization is very important in e-commerce. We taking care for better relevant content.",

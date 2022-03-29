@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../ButtonElement";
 
 import {
   OfferContainer,
@@ -12,7 +13,6 @@ import {
   OfferGridTitleRight,
   OfferGridIconRight,
   OfferGridTextWrapper,
-  OfferBtn,
 } from "./OfferSectionsElelements";
 
 const OfferSections = ({
@@ -36,6 +36,7 @@ const OfferSections = ({
   description4,
   description5,
   grayIcon,
+  btnlight,
 }) => {
   return (
     <>
@@ -85,7 +86,15 @@ const OfferSections = ({
             </OfferGridDescriptionLeft>
           </OfferGridTextWrapper>
         </OfferGridContainer>
-        <OfferBtn>Contact us</OfferBtn>
+        <Button
+          btnlight={btnlight}
+          to="footerContact"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          Contact us
+        </Button>
       </OfferContainer>
     </>
   );

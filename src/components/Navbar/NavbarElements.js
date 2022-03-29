@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { palette } from "../../styles/Colorpallete";
 import { typhography } from "../../styles/Typhography";
-import { Link as LinkS } from "react-scroll";
 
 export const NavContainer = styled.div`
   height: 100px;

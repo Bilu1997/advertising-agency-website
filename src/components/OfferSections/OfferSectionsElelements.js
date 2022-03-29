@@ -102,15 +102,3 @@ export const OfferGridDescriptionRight = styled.p`
   font-size: ${typhography.paragraphLarge};
   font-weight: 300;
 `;
-
-export const OfferBtn = styled.button`
-  width: 144px;
-  height: 56px;
-  border-radius: 13px;
-  background-color: ${palette.green};
-  font-size: ${typhography.paragraphLarge};
-  font-weight: bold;
-  color: ${palette.gray100};
-  border: none;
-  margin-top: 48px;
-`;
