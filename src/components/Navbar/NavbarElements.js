@@ -34,6 +34,7 @@ export const LeftContainer = styled.div`
   flex: 30%;
   display: flex;
   align-items: center;
+  height: 100px;
 `;
 
 export const RightContainter = styled.div`
@@ -41,17 +42,29 @@ export const RightContainter = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  height: 100px;
 `;
 
 export const NavLink = styled(LinkR)`
+  display: flex;
+  align-items: center;
   font-size: ${typhography.heading4};
   color: ${palette.gray100};
   text-decoration: none;
   text-align: right;
-  padding-left: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 98px;
 
   @media (max-width: 900px) {
     display: none;
+  }
+
+  &.active {
+    color: ${palette.green};
+  }
+  &:hover {
+    color: ${palette.green};
   }
 `;
 
