@@ -124,3 +124,12 @@ export const FooterCopyright = styled.small`
     top: 200px;
   }
 `;
+
+export const FooterThanks = styled.p`
+  font-size: ${typhography.heading4};
+  color: ${palette.gray100};
+  padding-bottom: 140px;
+  padding-top: 200px;
+  max-width: 300px;
+  text-align: center;
+`;

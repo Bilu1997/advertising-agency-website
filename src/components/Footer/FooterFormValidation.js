@@ -17,5 +17,9 @@ export default function validateInfo(values) {
     errors.description = alert("Description required");
   }
 
+  if (!values.checkbox) {
+    errors.checkbox = alert("Fill checkbox required");
+  }
+
   return errors;
 }
