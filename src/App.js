@@ -12,9 +12,9 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Home />
         <ScrollToTop>
           <Routes>
+            <Route path="/advertising-agency-website" element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/offer" element={<Offer />} />
             <Route path="/contact" element={<Contact />} />
