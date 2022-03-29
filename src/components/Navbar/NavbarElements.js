@@ -4,14 +4,20 @@ import { palette } from "../../styles/Colorpallete";
 import { typhography } from "../../styles/Typhography";
 import { Link as LinkS } from "react-scroll";
 
+export const NavContainer = styled.div`
+  height: 100px;
+  width: 100%;
+`;
 export const Nav = styled.nav`
-  background: ${palette.black};
-  height: ${(props) => (props.openMobileMenu ? "100vh" : "100px")};
-  position: sticky;
+  position: fixed;
   display: flex;
   flex-direction: column;
+  background: ${palette.gray900};
   width: 100%;
-
+  height: ${(props) => (props.openMobileMenu ? "100vh" : "100px")};
+  top: 0;
+  z-index: 999;
+  overflow: hidden;
   @media (min-width: 900px) {
     height: 100px;
   }
