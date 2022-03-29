@@ -76,7 +76,7 @@ export const FooterInput = styled.input`
 
   &:nth-child(5) {
     margin-top: -4px;
-    width: 16px;
+    width: 24px;
 
     &:after {
       content: "I have read the terms and conditions.";
@@ -86,7 +86,7 @@ export const FooterInput = styled.input`
       display: flex;
       flex-direction: row;
       width: 400px;
-      left: 22px;
+      left: 32px;
       top: 19px;
     }
   }
@@ -101,6 +101,12 @@ export const FooterInputButton = styled.button`
   background-color: ${palette.green};
   border-radius: 13px;
   border: 0px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #4deb83;
+    transition: all 0.2s ease-in-out;
+  }
 `;
 
 export const FooterCopyright = styled.small`

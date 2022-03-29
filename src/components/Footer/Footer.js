@@ -1,6 +1,9 @@
 import React from "react";
 import img from "../../assets/footer.jpg";
 import { Data } from "../../Data/Data";
+import FooterFormFunctions from "./FooterFormFunctions";
+import validate from "./FooterFormValidation";
+
 import {
   FooterBgImage,
   FooterContainer,
@@ -13,21 +16,45 @@ import {
 } from "./FooterElelements";
 
 const Footer = () => {
+  const { handleChange, values, handleSubmit, errors } =
+    FooterFormFunctions(validate);
   return (
     <FooterContainer id="footerContact">
       <FooterHeading>{Data.firstfooterHeading.toUpperCase()}</FooterHeading>
       <FooterHeading>{Data.secondFooterHeading.toUpperCase()}</FooterHeading>
       <FooterParagraph>{Data.footerParagraph}</FooterParagraph>
       <FooterBgImage src={img} />
-      <FooterForm id="footer_form">
+      <FooterForm id="footer_form" onSubmit={handleSubmit}>
         <FooterInput
+          name="firstLast"
           type="text"
           placeholder="first and last name"
+          value={values.firstLast}
+          onChange={handleChange}
         ></FooterInput>
-        <FooterInput type="tel" placeholder="telephone number"></FooterInput>
-        <FooterInput type="email" placeholder="e-mail"></FooterInput>
-        <FooterInput type="text" placeholder="description"></FooterInput>
-        <FooterInput type="checkbox"></FooterInput>
+
+        <FooterInput
+          name="tel"
+          type="tel"
+          placeholder="telephone number"
+          value={values.tel}
+          onChange={handleChange}
+        ></FooterInput>
+        <FooterInput
+          name="email"
+          type="email"
+          placeholder="e-mail"
+          value={values.email}
+          onChange={handleChange}
+        ></FooterInput>
+        <FooterInput
+          name="description"
+          type="text"
+          placeholder="description"
+          value={values.description}
+          onChange={handleChange}
+        ></FooterInput>
+        <FooterInput name="checkbox" type="checkbox"></FooterInput>
       </FooterForm>
       <FooterInputButton type="submit" form="footer_form">
         Send
