@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { palette } from "../../styles/Colorpallete";
 import { typhography } from "../../styles/Typhography";
-import { Link as LinkS } from "react-scroll";
 
 export const HeroContainer = styled.section`
   width: 100%;
@@ -34,23 +33,23 @@ export const HeroImg = styled.img`
 `;
 
 export const HeroWrapper = styled.div`
+  display: flex;
   flex-direction: column;
   padding-left: 204px;
   padding-top: 216px;
-  width: 451px;
+  max-width: 451px;
   z-index: 3;
 
   @media (max-width: 900px) {
-    padding-left: 0px;
     padding-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     align-items: center;
     text-align: center;
+    padding: 100px 12px 0 12px;
   }
 
   @media (max-width: 480px) {
-    width: 320px;
+    max-width: 320px;
   }
 `;
 
@@ -75,23 +74,6 @@ export const HeroParagraph = styled.p`
     margin-top: -16px;
   }
   @media (max-width: 480px) {
-    font-size: ${typhography.paragraphNormal};
-  }
-`;
-
-export const OfferBtn = styled.button`
-  width: 144px;
-  height: 56px;
-  font-size: ${typhography.paragraphLarge};
-  font-weight: bold;
-  border-radius: 12px;
-  border-style: none;
-  background-color: ${palette.gray900};
-  color: ${palette.gray100};
-
-  @media (max-width: 480px) {
-    width: 124px;
-    height: 48px;
     font-size: ${typhography.paragraphNormal};
   }
 `;

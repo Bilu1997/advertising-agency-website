@@ -25,6 +25,7 @@ import seoIcon from "../../assets/seoIcon.svg";
 import adsIcon from "../../assets/adsIcon.svg";
 import brandingIcon from "../../assets/brandingIcon.svg";
 
+// Loading text from Data.js
 const seoOffer = seoOfferData.map((d, i) => (
   <HomeOfferText key={i + "keySEO"}>{d.text}</HomeOfferText>
 ));
@@ -39,7 +40,7 @@ const brandingOffer = brandingOfferData.map((d, i) => (
 
 const HomeOffer = () => {
   return (
-    <HomeOfferContainer>
+    <HomeOfferContainer id="homeOffer">
       <HomeOfferTextWrapper>
         <HomeOfferHeading>{Data.homeOfferTitle}</HomeOfferHeading>
         <HomeOfferParagraph>{Data.homeOfferParagraph}</HomeOfferParagraph>
@@ -50,19 +51,40 @@ const HomeOffer = () => {
             <HomeOfferIcon src={seoIcon} />
             <HomeOfferTitle>SEO Optymalization</HomeOfferTitle>
             <HomeOfferList>{seoOffer}</HomeOfferList>
-            <BtnAskOffer>Ask for an offer</BtnAskOffer>
+            <BtnAskOffer
+              to="footerContact"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Ask for an offer
+            </BtnAskOffer>
           </HomeOfferBox>
           <HomeOfferBox>
             <HomeOfferIcon src={adsIcon} />
             <HomeOfferTitle>Google ads</HomeOfferTitle>
             <HomeOfferList>{adsOffer}</HomeOfferList>
-            <BtnAskOffer>Ask for an offer</BtnAskOffer>
+            <BtnAskOffer
+              to="footerContact"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Ask for an offer
+            </BtnAskOffer>
           </HomeOfferBox>
           <HomeOfferBox>
             <HomeOfferIcon src={brandingIcon} />
             <HomeOfferTitle>Branding</HomeOfferTitle>
             <HomeOfferList>{brandingOffer}</HomeOfferList>
-            <BtnAskOffer>Ask for an offer</BtnAskOffer>
+            <BtnAskOffer
+              to="footerContact"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Ask for an offer
+            </BtnAskOffer>
           </HomeOfferBox>
         </HomeOfferCards>
       </HomeOfferWrapper>

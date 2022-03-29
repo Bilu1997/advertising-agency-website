@@ -14,7 +14,7 @@ import {
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer id="footerContact">
       <FooterHeading>{Data.firstfooterHeading.toUpperCase()}</FooterHeading>
       <FooterHeading>{Data.secondFooterHeading.toUpperCase()}</FooterHeading>
       <FooterParagraph>{Data.footerParagraph}</FooterParagraph>

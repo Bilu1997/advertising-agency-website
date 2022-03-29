@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { palette } from "../../styles/Colorpallete";
 import { typhography } from "../../styles/Typhography";
 import icon from "../../assets/checkIcon.svg";
-
+import { Link as LinkS } from "react-scroll";
 export const HomeOfferContainer = styled.section`
   display: flex;
   flex-direction: column;
@@ -123,12 +123,24 @@ export const HomeOfferText = styled.li`
   }
 `;
 
-export const BtnAskOffer = styled.button`
+export const BtnAskOffer = styled(LinkS)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 210px;
   height: 56px;
   border-radius: 13px;
   font-size: ${typhography.paragraphLarge};
+  background-color: ${palette.gray100};
   font-weight: bold;
   position: relative;
+  border-style: none;
   bottom: -30px;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: ${palette.green};
+    color: ${palette.gray100};
+  }
 `;

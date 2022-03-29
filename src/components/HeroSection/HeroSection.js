@@ -1,13 +1,13 @@
 import React from "react";
 import HeroImage from "../../assets/HeroImg.svg";
 import { Data } from "../../Data/Data.js";
+import { Button } from "../ButtonElement";
 import {
   HeroContainer,
   HeroImg,
   HeroWrapper,
   HeroTitle,
   HeroParagraph,
-  OfferBtn,
 } from "./HeroElements";
 
 const HeroSection = () => {
@@ -18,7 +18,9 @@ const HeroSection = () => {
         <HeroWrapper>
           <HeroTitle>{Data.heroTitle}</HeroTitle>
           <HeroParagraph>{Data.heroParagraph}</HeroParagraph>
-          <OfferBtn>Offer</OfferBtn>
+          <Button to="homeOffer" spy={true} smooth={true} duration={500}>
+            Offer
+          </Button>
         </HeroWrapper>
       </HeroContainer>
     </>
