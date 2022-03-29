@@ -12,6 +12,7 @@ function App() {
     <>
       <Router>
         <Navbar />
+        <Home />
         <ScrollToTop>
           <Routes>
             <Route path="/" element={<Home />} />
