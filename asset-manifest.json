@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/advertising-agency-website/static/css/main.ffba4820.css",
-    "main.js": "/advertising-agency-website/static/js/main.d3afa875.js",
+    "main.js": "/advertising-agency-website/static/js/main.cac72b0e.js",
     "static/js/787.ab6ec954.chunk.js": "/advertising-agency-website/static/js/787.ab6ec954.chunk.js",
     "static/media/offerBanner.png": "/advertising-agency-website/static/media/offerBanner.32f6fa7c3eaa1dd1e6bd.png",
     "static/media/footer.jpg": "/advertising-agency-website/static/media/footer.137b9cfca37426c1c797.jpg",
+    "static/media/contactPageImg.jpg": "/advertising-agency-website/static/media/contactPageImg.74b426f02ed019e15fb0.jpg",
     "static/media/specialistPhoto2.png": "/advertising-agency-website/static/media/specialistPhoto2.bc91578858c5f897b78e.png",
     "static/media/specialistPhoto3.png": "/advertising-agency-website/static/media/specialistPhoto3.0682215290ba6cfc554c.png",
     "static/media/specialistPhoto1.png": "/advertising-agency-website/static/media/specialistPhoto1.85fa02e7923d842c2cc5.png",
-    "static/media/contactPageImg.png": "/advertising-agency-website/static/media/contactPageImg.a0aa4c2c604be322bd73.png",
     "static/media/HeroImg.svg": "/advertising-agency-website/static/media/HeroImg.6132823eb2674b37f035da7f7f342018.svg",
     "static/media/comp5.png": "/advertising-agency-website/static/media/comp5.2865bea732c31bdb8b91.png",
     "static/media/seoIcon1.svg": "/advertising-agency-website/static/media/seoIcon1.1d3ff4025b595a9c30cfc53a3d0a96ce.svg",
@@ -35,11 +35,11 @@
     "static/media/adsIcon2.svg": "/advertising-agency-website/static/media/adsIcon2.5974bf61e793ca1422c51e0f3012b8a1.svg",
     "static/media/checkIcon.svg": "/advertising-agency-website/static/media/checkIcon.765691592a209ddac235ed9124959baa.svg",
     "main.ffba4820.css.map": "/advertising-agency-website/static/css/main.ffba4820.css.map",
-    "main.d3afa875.js.map": "/advertising-agency-website/static/js/main.d3afa875.js.map",
+    "main.cac72b0e.js.map": "/advertising-agency-website/static/js/main.cac72b0e.js.map",
     "787.ab6ec954.chunk.js.map": "/advertising-agency-website/static/js/787.ab6ec954.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ffba4820.css",
-    "static/js/main.d3afa875.js"
+    "static/js/main.cac72b0e.js"
   ]
 }
