@@ -41,8 +41,8 @@ const Navbar = () => {
           {openMobileMenu && (
             <NavbarExtendedContainer>
               <ExtendedNavLink to="/">Home</ExtendedNavLink>
-              <ExtendedNavLink to="/">Offer</ExtendedNavLink>
-              <ExtendedNavLink to="/">Contact</ExtendedNavLink>
+              <ExtendedNavLink to="/offer">Offer</ExtendedNavLink>
+              <ExtendedNavLink to="/contact">Contact</ExtendedNavLink>
             </NavbarExtendedContainer>
           )}
         </Nav>
