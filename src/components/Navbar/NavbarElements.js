@@ -85,6 +85,7 @@ export const NavbarExtendedContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 32px;
+  transition: all 0.2s ease-out;
 
   @media (min-width: 900px) {
     display: none;

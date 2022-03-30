@@ -15,6 +15,8 @@ import {
 
 const Navbar = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
+  const handleClick = () => setOpenMobileMenu(!openMobileMenu);
+  const closeMobileMenu = () => setOpenMobileMenu(false);
   return (
     <>
       <NavContainer>
@@ -28,21 +30,23 @@ const Navbar = () => {
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/offer">Offer</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
-                <MobileIcon
-                  onClick={() => {
-                    setOpenMobileMenu((curr) => !curr);
-                  }}
-                >
+                <MobileIcon onClick={handleClick}>
                   {openMobileMenu ? <>&#10005;</> : <>&#8801;</>}
                 </MobileIcon>
               </NavLinkContainer>
             </RightContainter>
           </NavbarInnerContainer>
           {openMobileMenu && (
-            <NavbarExtendedContainer>
-              <ExtendedNavLink to="/">Home</ExtendedNavLink>
-              <ExtendedNavLink to="/offer">Offer</ExtendedNavLink>
-              <ExtendedNavLink to="/contact">Contact</ExtendedNavLink>
+            <NavbarExtendedContainer onClick={closeMobileMenu}>
+              <ExtendedNavLink to="/" onClick={handleClick}>
+                Home
+              </ExtendedNavLink>
+              <ExtendedNavLink to="/offer" onClick={handleClick}>
+                Offer
+              </ExtendedNavLink>
+              <ExtendedNavLink to="/contact" onClick={handleClick}>
+                Contact
+              </ExtendedNavLink>
             </NavbarExtendedContainer>
           )}
         </Nav>
