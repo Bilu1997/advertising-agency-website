@@ -1,9 +1,9 @@
 # Project description
 
-My project is website for imaginary advertising agency CAA(Creative Advertising agency).
-I made UI in figma then tried code it in react with using styled components.
-Check the UI design here: https://www.behance.net/gallery/140226503/%28Conceptional%29-Advertising-Agency-Landing-Page
-Check how page works: https://bilu1997.github.io/advertising-agency-website/
+My project is website for imaginary advertising agency CAA(Creative Advertising agency). <br/>
+I made UI in figma then tried code it in react with using styled components. <br/>
+Check the UI design here: https://www.behance.net/gallery/140226503/%28Conceptional%29-Advertising-Agency-Landing-Page <br/>
+Check how page works: https://bilu1997.github.io/advertising-agency-website/ <br/>
 
 # Warning! To see all website content turn off ADBLOCK!
 
