@@ -29,6 +29,7 @@ export const HeroImg = styled.img`
 
   @media (max-width: 480px) {
     height: 680px;
+    object-position: 63%;
   }
 `;
 

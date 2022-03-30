@@ -20,6 +20,7 @@ export const ContactPageBannerImg = styled.img`
   height: 400px;
   z-index: -1;
   background-color: ${palette.gray400};
+  opacity: 90%;
 `;
 
 export const ContactPageBannerHeader = styled.h1`
@@ -28,5 +29,5 @@ export const ContactPageBannerHeader = styled.h1`
   text-align: center;
   padding: 124px 12px 0 12px;
   color: ${palette.gray100};
-  text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.35);
+  text-shadow: 2px 4px 2px rgb(0, 0, 0, 0.5);
 `;

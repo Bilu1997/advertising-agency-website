@@ -4,7 +4,7 @@ import {
   ContactPageBannerContainer,
   ContactPageBannerImg,
 } from "./ContactPageBannerElelemts";
-import bgImg from "../../assets/contactPageImg.png";
+import bgImg from "../../assets/contactPageImg.jpg";
 
 const ContactPageBanner = () => {
   return (
@@ -12,7 +12,7 @@ const ContactPageBanner = () => {
       <ContactPageBannerContainer>
         <ContactPageBannerImg src={bgImg} />
         <ContactPageBannerHeader>
-          Our specialist are always open to help.{" "}
+          Our specialist are always open to help.
         </ContactPageBannerHeader>
       </ContactPageBannerContainer>
     </>
