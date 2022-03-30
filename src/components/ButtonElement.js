@@ -15,7 +15,7 @@ export const Button = styled(LinkS)`
   border-style: none;
   background-color: ${({ btnlight }) =>
     btnlight ? palette.gray100 : palette.gray900};
-  color: ${({ btnLight }) => (btnLight ? palette.gray900 : palette.gray100)};
+  color: ${({ btnlight }) => (btnlight ? palette.gray900 : palette.gray100)};
   cursor: pointer;
 
   @media (max-width: 480px) {

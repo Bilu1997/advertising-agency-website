@@ -68,8 +68,8 @@ const Footer = () => {
             name="checkbox"
             type="checkbox"
             onChange={handleChange}
-            onClick={() => !setFillCheckbox}
-            value={fillCheckbox}
+            onClick={() => setFillCheckbox(!fillCheckbox)}
+            value={values.checkbox}
           ></FooterInput>
         </FooterForm>
       )}

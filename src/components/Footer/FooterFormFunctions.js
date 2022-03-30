@@ -6,6 +6,7 @@ const FooterFormFunctions = (validate, callback) => {
     email: "",
     tel: "",
     description: "",
+    checkbox: false,
   });
 
   const [errors, setErrors] = useState({});
